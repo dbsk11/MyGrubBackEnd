@@ -8,9 +8,9 @@ class RestaurantMenusController < ApplicationController
 
 
     def show
-        @restaurant = RestaurantMenu.find(params[:id])
+        restaurant = RestaurantMenu.find(params[:id])
 
-        menu =  @restaurant.items
+        menu =  restaurant.items
 
         render json: menu
 

@@ -5,8 +5,9 @@ class UsersCartsController < ApplicationController
     end
 
     def show
-        userscart = UserCart.find(params[:id])
-        render json: userscart
+        userscart = UsersCart.find(params[:id])
+        cart = userscart.cart_items
+        render json: cart
     end
     
 end
