@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 2020_06_12_155241) do
   end
 
   create_table "items", force: :cascade do |t|
+    t.string "name"
     t.integer "price"
-    t.string "cateogry"
+    t.string "category"
     t.string "description"
     t.integer "restaurant_menu_id"
     t.datetime "created_at", precision: 6, null: false
@@ -32,8 +33,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_155241) do
   create_table "restaurant_menus", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.string "phone"
-    t.string "number"
+    t.string "phone_number"
     t.string "cuisine"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_155241) do
   create_table "users_carts", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.string "phoneNumber"
+    t.string "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -3,7 +3,7 @@ class CreateUsersCarts < ActiveRecord::Migration[6.0]
     create_table :users_carts do |t|
       t.string :name
       t.string :address
-      t.string :phoneNumber
+      t.string :phone_number
 
       t.timestamps
     end

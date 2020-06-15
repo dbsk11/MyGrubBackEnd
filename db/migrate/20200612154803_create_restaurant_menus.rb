@@ -3,8 +3,7 @@ class CreateRestaurantMenus < ActiveRecord::Migration[6.0]
     create_table :restaurant_menus do |t|
       t.string :name
       t.string :address
-      t.string :phone
-      t.string :number
+      t.string :phone_number
       t.string :cuisine
 
       t.timestamps
