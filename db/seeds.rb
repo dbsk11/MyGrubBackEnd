@@ -28,7 +28,7 @@ UsersCart.create(name: "Jackson", address: Faker::Address.full_address, phone_nu
 
 puts "creating items"
 100.times do
-    Item.create(name: Faker::Dessert.variety, price: rand(1..10), category: ["apps", "mains", "bevs","desserts"].sample, restaurant_menu_id: RestaurantMenu.all.sample.id)
+    Item.create(name: Faker::Dessert.variety, price: rand(1..10), description: Faker::Food.description, category: ["apps", "mains", "bevs","desserts"].sample, restaurant_menu_id: RestaurantMenu.all.sample.id)
 end
 
 puts "creating cart items"
