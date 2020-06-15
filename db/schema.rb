@@ -33,11 +33,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_155241) do
   create_table "restaurant_menus", force: :cascade do |t|
     t.string "name"
     t.string "address"
-<<<<<<< HEAD
     t.string "phone_number"
-=======
-    t.string "phoneNumber"
->>>>>>> start
     t.string "cuisine"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

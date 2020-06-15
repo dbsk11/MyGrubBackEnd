@@ -20,19 +20,18 @@ RestaurantMenu.destroy_all
 
 puts "creating restaurant_menus"
 10.times do
-    RestaurantMenu.create(name: Faker::Restaurant.name, cuisine: Faker::Restaurant.type, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address )
+    RestaurantMenu.create(name: Faker::Restaurant.name, cuisine: Faker::Restaurant.type, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 end
-
 
 puts "creating user cart"
 UsersCart.create(name: "Jackson", address: Faker::Address.full_address, phone_number: Faker::PhoneNumber.cell_phone)
 
 puts "creating items"
 100.times do
-    Item.create(name: Faker::Dessert.variety, price: rand(1..10), category: ["apps", "mains", "bevs","desserts"].sample, restaurant_menu_id: RestaurantMenu.all.id.sample)
+    Item.create(name: Faker::Dessert.variety, price: rand(1..10), category: ["apps", "mains", "bevs","desserts"].sample, restaurant_menu_id: RestaurantMenu.all.sample.id)
 end
 
-puts "creating cart-items"
+puts "creating cart items"
 10.times do 
     CartItem.create(quantity: rand(1..3), item_id: Item.all.sample.id, users_cart_id: UsersCart.all.sample.id)
 end
