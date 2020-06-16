@@ -26,8 +26,6 @@ class CartItemsController < ApplicationController
     def destroy
         cartitem = CartItem.find(params[:id])
         cartitem.destroy
-
-        render json: {}
     end
 
     private
