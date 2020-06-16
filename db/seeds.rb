@@ -11,40 +11,23 @@ puts "destroying restaurant_menus"
 RestaurantMenu.destroy_all
 
 puts "creating restaurant_menus"
-RestaurantMenu.create(name: "Pizza and Pasta", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Taste of Venice", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Lorenzo's Pizzeria", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-<<<<<<< HEAD
+RestaurantMenu.create(name: "Pasta and Pizza", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Taste of Venice", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Lorenzo's Pizzeria", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
-RestaurantMenu.create(name: "Taste of Thailand", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "House of Pad Thai", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Thai Kitchen", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Taste of Thailand", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "House of Pad Thai", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Thai Kitchen", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
-RestaurantMenu.create(name: "Jack's Steakhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Burger House", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Pat's Grillhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Jack's Steakhouse", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Burger House", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Pat's Grillhouse", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
-RestaurantMenu.create(name: "Las Tapas", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Los Marineros", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Sabor del Mar", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-
-
-=======
-
-RestaurantMenu.create(name: "Taste of Thailand", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "House of Pad Thai", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Thai Kitchen", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-
-RestaurantMenu.create(name: "Jack's Steakhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Burger House", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Pat's Grillhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-
-RestaurantMenu.create(name: "Las Tapas", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Los Marineros", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Sabor del Mar", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+# RestaurantMenu.create(name: "Las Tapas", cuisine: "Mexican", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+# RestaurantMenu.create(name: "Los Marineros", cuisine: "Mexican", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+# RestaurantMenu.create(name: "Sabor del Mar", cuisine: "Mexican", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
 
->>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
 puts "creating user_cart"
 UsersCart.create(name: Faker::Name.name, address: Faker::Address.full_address, phone_number: Faker::PhoneNumber.cell_phone)
 
@@ -141,41 +124,31 @@ Item.create(name: "Coffee", price: 4, category: "Beverages", restaurant_menu_id:
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 6, description: "Rich black tea sweeted with condensed milk and served over ice")
 
 # restaurant 7 - American - steakhouse
-<<<<<<< HEAD
 Item.create(name: "French Onion Soup", price: 8, category: "Appetizer", restaurant_menu_id: 7, description: "Slow-cooked caramalized onions, French break, gruyere cheese in a beef stock base")
-Item.create(name: "Sliced Tomatoes & Onions", price: 2, category: "Appetizer", restaurant_menu_id: 7, description: "Thickly sliced tomato and onions in our homemade vinaigrette")
+Item.create(name: "Sliced Tomatoes & Onions", price: 12, category: "Appetizer", restaurant_menu_id: 7, description: "Thickly sliced tomato and onions in our homemade vinaigrette")
 Item.create(name: "Greek Salad", price: 10, category: "Appetizer", restaurant_menu_id: 7, description: "Fresh salad bed with cucumbers, onions, peppers, kalamata olives, and grape tomatoes")
-=======
-Item.create(name: "French Onion Soup", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Slow-cooked caramalized onions, French break, gruyere cheese in a beef stock base")
-Item.create(name: "Sliced Tomatoes & Onions", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Thickly sliced tomato and onions in our homemade vinaigrette")
-Item.create(name: "Greek Salad", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Fresh salad bed with cucumbers, onions, peppers, kalamata olives, and grape tomatoes")
->>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
 Item.create(name: "Rib Eye Steak", price: 40, category: "Entree", restaurant_menu_id: 7, description: "Seasoned and seared with potato puree and a side of steamed asparagus")
 Item.create(name: "T-Bone Steak", price: 40, category: "Entree", restaurant_menu_id: 7, description: "Seasoned and seared with potato puree and a side of broccoli")
 Item.create(name: "Porterhouse Steak for Two", price: 80, category: "Entree", restaurant_menu_id: 7, description: "Seasoned, seared, and served with a choice of three sides")
 Item.create(name: "Porterhouse Steak for Four", price: 170, category: "Entree", restaurant_menu_id: 7, description: "Seasoned, seared, and served with a choice of six sides")
-<<<<<<< HEAD
 Item.create(name: "Cheesecake", price: 8, category: "Dessert", restaurant_menu_id: 7, description: "Graham cracker crust with a rich and creamy filling")
-=======
-Item.create(name: "Cheesecake", price: , category: "Dessert", restaurant_menu_id: 7, description: "Graham cracker crust with a rich and creamy filling")
->>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
-Item.create(name: "Pecan Pie", price: , category: "Dessert", restaurant_menu_id: 7, description: "Our signature homemade pie naturally sweetened with maple syrup")
-Item.create(name: "Chocolate Mousse Cake", price: , category: "Dessert", restaurant_menu_id: 7, description: "Super moist dark chocolate mousse cake")
+Item.create(name: "Pecan Pie", price: 10, category: "Dessert", restaurant_menu_id: 7, description: "Our signature homemade pie naturally sweetened with maple syrup")
+Item.create(name: "Chocolate Mousse Cake", price: 9, category: "Dessert", restaurant_menu_id: 7, description: "Super moist dark chocolate mousse cake")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 7, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 7, description: "Fresh squeezed lemonade")
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 7, description: "Rich black tea sweeted with condensed milk and served over ice")
 
 # restaurant 8 - American - burgers
-Item.create(name: "Caesar Salad", price: , category: "Appetizer", restaurant_menu_id: 8, description: "Salad bed of romaine lettuce with croutons, lemon juice, olive oil, and egg with homemade caesar dressing")
-Item.create(name: "Chicken Wings", price: , category: "Appetizer", restaurant_menu_id: 8, description: "Double deep fried and rubbed in our homemade spice mix")
-Item.create(name: "Spinach and Artichoke Dip", price: , category: "Appetizer", restaurant_menu_id: 8, description: "Rich and creamy dip filled with spinach and artichokes")
-Item.create(name: "Cheeseburger", price: , category: "Entree", restaurant_menu_id: 8, description: "Traditional cheeseburger with lettuce, tomato, and onion")
-Item.create(name: "Avocado Greens Burger", price: , category: "Entree", restaurant_menu_id: 8, description: "Cheeseburger with slices of avocado, mixed greens, and grilled onions")
-Item.create(name: "Texas Cowboy Burger", price: , category: "Entree", restaurant_menu_id: 8, description: "Cheeseburger with lettuce, tomato, and a fried egg on top")
-Item.create(name: "Tuna Ahi Burger", price: , category: "Entree", restaurant_menu_id: 8, description: "Lightly seared tuna with a wasabi mayo sauce")
-Item.create(name: "Apple Strudel", price: , category: "Dessert", restaurant_menu_id: 8, description: "Savory strudel pastry filled with pieces of Gala apples, sugar, cinnamon, and bread crumbs")
-Item.create(name: "Key Lime Pie", price: , category: "Dessert", restaurant_menu_id: 8, description: "Rich graham cracker crust with a tart key lime filling")
-Item.create(name: "Hot Fudge Sundae", price: , category: "Dessert", restaurant_menu_id: 8, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
+Item.create(name: "Caesar Salad", price: 7, category: "Appetizer", restaurant_menu_id: 8, description: "Salad bed of romaine lettuce with croutons, lemon juice, olive oil, and egg with homemade caesar dressing")
+Item.create(name: "Chicken Wings", price: 10, category: "Appetizer", restaurant_menu_id: 8, description: "Double deep fried and rubbed in our homemade spice mix")
+Item.create(name: "Spinach and Artichoke Dip", price: 12, category: "Appetizer", restaurant_menu_id: 8, description: "Rich and creamy dip filled with spinach and artichokes")
+Item.create(name: "Cheeseburger", price: 16, category: "Entree", restaurant_menu_id: 8, description: "Traditional cheeseburger with lettuce, tomato, and onion")
+Item.create(name: "Avocado Greens Burger", price: 18, category: "Entree", restaurant_menu_id: 8, description: "Cheeseburger with slices of avocado, mixed greens, and grilled onions")
+Item.create(name: "Texas Cowboy Burger", price: 18, category: "Entree", restaurant_menu_id: 8, description: "Cheeseburger with lettuce, tomato, and a fried egg on top")
+Item.create(name: "Tuna Ahi Burger", price: 20, category: "Entree", restaurant_menu_id: 8, description: "Lightly seared tuna with a wasabi mayo sauce")
+Item.create(name: "Apple Strudel", price: 7, category: "Dessert", restaurant_menu_id: 8, description: "Savory strudel pastry filled with pieces of Gala apples, sugar, cinnamon, and bread crumbs")
+Item.create(name: "Key Lime Pie", price: 6, category: "Dessert", restaurant_menu_id: 8, description: "Rich graham cracker crust with a tart key lime filling")
+Item.create(name: "Hot Fudge Sundae", price: 7, category: "Dessert", restaurant_menu_id: 8, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 8, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 8, description: "Fresh squeezed lemonade")
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 8, description: "Rich black tea sweeted with condensed milk and served over ice")
@@ -190,52 +163,52 @@ Item.create(name: "Filet Mignon", price: 60, category: "Entree", restaurant_menu
 Item.create(name: "Lamb Chop", price: 55, category: "Entree", restaurant_menu_id: 9, description: "Seasoned, seared, and served with potato puree and a side of creamed spinach")
 Item.create(name: "Tiramisu", price: 15, category: "Dessert", restaurant_menu_id: 9, description: "Rich sponge cake soaked in coffee with alternating layers of mascarpone cheese")
 Item.create(name: "Ice Cream", price: 10, category: "Dessert", restaurant_menu_id: 9, description: "Homemade! Select from vanilla, chocolate, and strawberry")
-Item.create(name: "Hot Fudge Sundae"12, price: , category: "Dessert", restaurant_menu_id: 9, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
+Item.create(name: "Hot Fudge Sundae", price: 12, category: "Dessert", restaurant_menu_id: 9, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 9, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 9, description: "Fresh squeezed lemonade")
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 9, description: "Rich black tea sweeted with condensed milk and served over ice")
 
-# restaurant 10 - Mexican
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+# # restaurant 10 - Mexican
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
 
-# restaurant 11 - Mexican
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+# # restaurant 11 - Mexican
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
 
-# restaurant 12 - Mexican
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
-Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+# # restaurant 12 - Mexican
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users_carts, only: [:index, :show]
-  resources :cart_items, only: [:index, :create, :update, :delete]
+  resources :cart_items, except: [:new, :edit]
   resources :items, only: [:index, :show]
   resources :restaurant_menus, only: [:index, :show]
 
