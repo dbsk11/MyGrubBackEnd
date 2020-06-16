@@ -14,6 +14,7 @@ puts "creating restaurant_menus"
 RestaurantMenu.create(name: "Pizza and Pasta", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 RestaurantMenu.create(name: "Taste of Venice", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 RestaurantMenu.create(name: "Lorenzo's Pizzeria", cuisine: Italian, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+<<<<<<< HEAD
 
 RestaurantMenu.create(name: "Taste of Thailand", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 RestaurantMenu.create(name: "House of Pad Thai", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
@@ -28,6 +29,22 @@ RestaurantMenu.create(name: "Los Marineros", cuisine: Mexican, phone_number: Fak
 RestaurantMenu.create(name: "Sabor del Mar", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
 
+=======
+
+RestaurantMenu.create(name: "Taste of Thailand", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "House of Pad Thai", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Thai Kitchen", cuisine: Thai, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+
+RestaurantMenu.create(name: "Jack's Steakhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Burger House", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Pat's Grillhouse", cuisine: American, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+
+RestaurantMenu.create(name: "Las Tapas", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Los Marineros", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Sabor del Mar", cuisine: Mexican, phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+
+
+>>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
 puts "creating user_cart"
 UsersCart.create(name: Faker::Name.name, address: Faker::Address.full_address, phone_number: Faker::PhoneNumber.cell_phone)
 
@@ -124,14 +141,24 @@ Item.create(name: "Coffee", price: 4, category: "Beverages", restaurant_menu_id:
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 6, description: "Rich black tea sweeted with condensed milk and served over ice")
 
 # restaurant 7 - American - steakhouse
+<<<<<<< HEAD
 Item.create(name: "French Onion Soup", price: 8, category: "Appetizer", restaurant_menu_id: 7, description: "Slow-cooked caramalized onions, French break, gruyere cheese in a beef stock base")
 Item.create(name: "Sliced Tomatoes & Onions", price: 2, category: "Appetizer", restaurant_menu_id: 7, description: "Thickly sliced tomato and onions in our homemade vinaigrette")
 Item.create(name: "Greek Salad", price: 10, category: "Appetizer", restaurant_menu_id: 7, description: "Fresh salad bed with cucumbers, onions, peppers, kalamata olives, and grape tomatoes")
+=======
+Item.create(name: "French Onion Soup", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Slow-cooked caramalized onions, French break, gruyere cheese in a beef stock base")
+Item.create(name: "Sliced Tomatoes & Onions", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Thickly sliced tomato and onions in our homemade vinaigrette")
+Item.create(name: "Greek Salad", price: , category: "Appetizer", restaurant_menu_id: 7, description: "Fresh salad bed with cucumbers, onions, peppers, kalamata olives, and grape tomatoes")
+>>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
 Item.create(name: "Rib Eye Steak", price: 40, category: "Entree", restaurant_menu_id: 7, description: "Seasoned and seared with potato puree and a side of steamed asparagus")
 Item.create(name: "T-Bone Steak", price: 40, category: "Entree", restaurant_menu_id: 7, description: "Seasoned and seared with potato puree and a side of broccoli")
 Item.create(name: "Porterhouse Steak for Two", price: 80, category: "Entree", restaurant_menu_id: 7, description: "Seasoned, seared, and served with a choice of three sides")
 Item.create(name: "Porterhouse Steak for Four", price: 170, category: "Entree", restaurant_menu_id: 7, description: "Seasoned, seared, and served with a choice of six sides")
+<<<<<<< HEAD
 Item.create(name: "Cheesecake", price: 8, category: "Dessert", restaurant_menu_id: 7, description: "Graham cracker crust with a rich and creamy filling")
+=======
+Item.create(name: "Cheesecake", price: , category: "Dessert", restaurant_menu_id: 7, description: "Graham cracker crust with a rich and creamy filling")
+>>>>>>> f26a937bc2844de724265c9ea8709954f60648f2
 Item.create(name: "Pecan Pie", price: , category: "Dessert", restaurant_menu_id: 7, description: "Our signature homemade pie naturally sweetened with maple syrup")
 Item.create(name: "Chocolate Mousse Cake", price: , category: "Dessert", restaurant_menu_id: 7, description: "Super moist dark chocolate mousse cake")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 7, description: "500ml bottle")
@@ -168,47 +195,47 @@ Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", resta
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 9, description: "Fresh squeezed lemonade")
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 9, description: "Rich black tea sweeted with condensed milk and served over ice")
 
-# # restaurant 10 - Mexican
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+# restaurant 10 - Mexican
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 10, description: "")
 
-# # restaurant 11 - Mexican
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+# restaurant 11 - Mexican
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 11, description: "")
 
-# # restaurant 12 - Mexican
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
-# Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+# restaurant 12 - Mexican
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Appetizer", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Entree", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Dessert", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
+Item.create(name: "", price: , category: "Beverages", restaurant_menu_id: 12, description: "")
