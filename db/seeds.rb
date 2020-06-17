@@ -11,9 +11,9 @@ puts "destroying restaurant_menus"
 RestaurantMenu.destroy_all
 
 puts "creating restaurant_menus"
-RestaurantMenu.create(name: "Pasta and Pizza", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Taste of Venice", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
-RestaurantMenu.create(name: "Lorenzo's Pizzeria", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Pasta and Pizza", cuisine: "Italian", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Taste of Venice", cuisine: "Italian", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Lorenzo's Pizzeria", cuisine: "Italian", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
 RestaurantMenu.create(name: "Taste of Thailand", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 RestaurantMenu.create(name: "House of Pad Thai", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
