@@ -102,7 +102,6 @@ Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", resta
 Item.create(name: "Coffee", price: 4, category: "Beverages", restaurant_menu_id: 5, description: "Served hot or cold")
 Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 5, description: "Rich black tea sweeted with condensed milk and served over ice")
 
-
 # restaurant 6 - Thai
 Item.create(name: "Steamed Dumplings", price: 7, category: "Appetizer", restaurant_menu_id: 6, description: "Steamed mixed vegetables and clear noodles wrapped in dough")
 Item.create(name: "Curry Puffs", price: 8, category: "Appetizer", restaurant_menu_id: 6, description: "Puff pastry filled with vegetables")
@@ -131,7 +130,7 @@ Item.create(name: "Pecan Pie", price: 10, category: "Dessert", restaurant_menu_i
 Item.create(name: "Chocolate Mousse Cake", price: 9, category: "Dessert", restaurant_menu_id: 7, description: "Super moist dark chocolate mousse cake")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 7, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 7, description: "Fresh squeezed lemonade")
-Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 7, description: "Rich black tea sweeted with condensed milk and served over ice")
+Item.create(name: "Soda", price: 4, category: "Beverages", restaurant_menu_id: 7, description: "Your choice of sprite, cola, or ginger ale")
 
 # restaurant 8 - American - burgers
 Item.create(name: "Caesar Salad", price: 7, category: "Appetizer", restaurant_menu_id: 8, description: "Salad bed of romaine lettuce with croutons, lemon juice, olive oil, and egg with homemade caesar dressing")
@@ -146,7 +145,7 @@ Item.create(name: "Key Lime Pie", price: 6, category: "Dessert", restaurant_menu
 Item.create(name: "Hot Fudge Sundae", price: 7, category: "Dessert", restaurant_menu_id: 8, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 8, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 8, description: "Fresh squeezed lemonade")
-Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 8, description: "Rich black tea sweeted with condensed milk and served over ice")
+Item.create(name: "Soda", price: 4, category: "Beverages", restaurant_menu_id: 8, description: "Your choice of sprite, cola, or ginger ale")
 
 # restaurant 9 - American - steakhouse
 Item.create(name: "Jumbo Shrimp Cocktail", price: 32, category: "Appetizer", restaurant_menu_id: 9, description: "Jumbo shrimp served with chili sauce")
@@ -161,4 +160,4 @@ Item.create(name: "Ice Cream", price: 10, category: "Dessert", restaurant_menu_i
 Item.create(name: "Hot Fudge Sundae", price: 12, category: "Dessert", restaurant_menu_id: 9, description: "Two scoops of vanilla ice cream served with hot chocolate sauce, sprinkles, nuts, and whipped cream")
 Item.create(name: "Sparkling Pellegrino", price: 5, category: "Beverages", restaurant_menu_id: 9, description: "500ml bottle")
 Item.create(name: "Lemonade", price: 4, category: "Beverages", restaurant_menu_id: 9, description: "Fresh squeezed lemonade")
-Item.create(name: "Thai Iced Tea", price: 5, category: "Beverages", restaurant_menu_id: 9, description: "Rich black tea sweeted with condensed milk and served over ice")
+Item.create(name: "Soda", price: 4, category: "Beverages", restaurant_menu_id: 9, description: "Your choice of sprite, cola, or ginger ale")
