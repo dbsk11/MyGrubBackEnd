@@ -23,6 +23,14 @@ RestaurantMenu.create(name: "Jack's Steakhouse", cuisine: "American", phone_numb
 RestaurantMenu.create(name: "Burger House", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 RestaurantMenu.create(name: "Pat's Grillhouse", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
 
+RestaurantMenu.create(name: "Tony's Pizzeria", cuisine: "Italian", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Cassie's Italian", cuisine: "Italian", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Thai Palace", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Sweet Basil", cuisine: "Thai", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Texas Roadhouse", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+RestaurantMenu.create(name: "Chili's", cuisine: "American", phone_number: Faker::PhoneNumber.cell_phone, address: Faker::Address.full_address)
+
+
 puts "creating user_cart"
 UsersCart.create(name: Faker::Name.name, address: Faker::Address.full_address, phone_number: Faker::PhoneNumber.cell_phone)
 
