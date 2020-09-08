@@ -1,24 +1,25 @@
-# README
+# MyGrub
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A grubhub clone, built with vanilla Javascript and a Rails backend, which allows users to choose a restaurant, select items to order, and add items to their cart.
 
-Things you may want to cover:
+_Made by [Jessica Kim](https://github.com/dbsk11) and [Don Namgyal](https://github.com/dnamgyal) for their Flatiron School Mod 3 project._
+![](src/logo.png)
 
-* Ruby version
+## How It Works
 
-* System dependencies
+A user is able to browse available restaurants by cuisine, browse through the menu by category, and add desired food items to their cart.
 
-* Configuration
+## Built Using?
 
-* Database creation
+MyGrub was built with a Rails backend which handles user authentication as well as collection/provision of movie data and trailers. The frontend is built with vanilla Javascript which neatly displays the restaurants by cuisine, menu items by category, and the users cart.
 
-* Database initialization
+## Software Requirements
 
-* How to run the test suite
+- Ruby on Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+## How to Run (backend)
 
-* Deployment instructions
-
-* ...
+- Clone this repo as well as the [frontend repo](https://github.com/dbsk11/MyGrubFrontEnd), navigate to the project root in your terminal.
+- Run `rails db:create`
+- Run `rails db:seed`
+- Run `rails s`
